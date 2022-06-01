@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+body{
+    background-color: #ddd;
+}
+.container{
+    background-color: #aaa;
+    height: 80vh;
+    position: relative;
+    width: 80vh;
+    margin: auto;
+    top: 10vh;
+    border-radius: 50%;
+    box-shadow:inset whitesmoke -15px -15px 20px 0px;
+}
+.circle{
+    background-color: blue;
+    height: 60vh;
+    position: relative;
+    width: 60vh;
+    border-radius: 50%;
+    margin: auto;
+    top: 10vh;
+    box-shadow:inset whitesmoke 15px 15px 20px 0px;
+}
+.like{
+    background-color: transparent;
+    position: relative;
+    top: 7vh;
+    left: 10vh;
+    margin: auto;
+    /* width: 50vh;
+    height: 50vh;
+    border-radius: 50%; */
+    animation: animatelike 2s 1;
+}
+.asset-1{
+    background-color: whitesmoke;
+    height: 20vh;
+    width: 7vh;
+    border-radius: 2vh;
+    position: absolute;
+    top: 15vh;
+    left: 2vh;
+    animation: animatecolor 2s 5;
+}
+.asset-2{
+    background-color: whitesmoke;
+    width: 13vh;
+    height: 7vh;
+    transform: rotate(110deg);
+    position: absolute;
+    top: 6vh;
+    left: 13vh;
+    border-radius: 1100% 0% 0% 0%;
+    animation: animatecolor 2s 5;
+}
+.asset-3{
+    background-color: whitesmoke;
+    width: 21vh;
+    height: 6.3vh;
+    position: absolute;
+    top: 14vh;
+    left: 11vh;
+    border-radius: 5vh 3vh 3vh
+    0%;
+    animation: animatecolor 2s 5;
+}
+.asset-4{
+    background-color: whitesmoke;
+    width: 23vh;
+    height: 6vh;
+    position: absolute;
+    top: 20vh;
+    left: 11vh;
+    border-radius: 0vh 3vh 3vh
+    0%;
+    animation: animatecolor 2s 5;
+}
+.asset-5{
+    background-color: whitesmoke;
+    width: 22vh;
+    height: 6vh;
+    position: absolute;
+    top: 25vh;
+    left: 11vh;
+    border-radius: 0vh 3vh 3vh
+    0%;
+    animation: animatecolor 2s 5;
+}
+.asset-6{
+    background-color: whitesmoke;
+    width: 20vh;
+    height: 4vh;
+    position: absolute;
+    top: 30vh;
+    left: 11vh;
+    border-radius: 0vh 3vh 3vh
+    5vh;
+    animation: animatecolor 2s 5;
+}
+@keyframes animatelike {
+    0%{
+        transform: scale(.9);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(4deg);
+    }
+}
+@keyframes animatecolor {
+    0%{
+        background-color: cornflowerblue;
+    }
+    50%{
+        background-color: whitesmoke;
+    }
+    60%{
+        background-color: blue;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
